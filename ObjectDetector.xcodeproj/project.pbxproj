@@ -14,8 +14,8 @@
 		207CCD932C02822A00742B74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207CCD922C02822A00742B74 /* Preview Assets.xcassets */; };
 		207CCD9A2C0282FC00742B74 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CCD992C0282FC00742B74 /* CameraPicker.swift */; };
 		207CCD9C2C028B2300742B74 /* ImageLoaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CCD9B2C028B2300742B74 /* ImageLoaderViewModel.swift */; };
-		272722CC2E9A9D9300A609D9 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 272722CB2E9A9D9300A609D9 /* Resnet50.mlmodel */; };
 		272722CE2E9A9E8400A609D9 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272722CD2E9A9E8400A609D9 /* ContentViewModel.swift */; };
+		27F47CCF2E9BF4A600AD2D41 /* Resnet50.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 27F47CCE2E9BF4A600AD2D41 /* Resnet50.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		207CCD922C02822A00742B74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		207CCD992C0282FC00742B74 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 		207CCD9B2C028B2300742B74 /* ImageLoaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderViewModel.swift; sourceTree = "<group>"; };
-		272722CB2E9A9D9300A609D9 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		272722CD2E9A9E8400A609D9 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		27F47CCE2E9BF4A600AD2D41 /* Resnet50.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = Resnet50.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 				207CCD992C0282FC00742B74 /* CameraPicker.swift */,
 				207CCD9B2C028B2300742B74 /* ImageLoaderViewModel.swift */,
 				204CEEEA2C028E18000AC03D /* PrimaryButtonStyle.swift */,
-				272722CB2E9A9D9300A609D9 /* Resnet50.mlmodel */,
+				27F47CCE2E9BF4A600AD2D41 /* Resnet50.mlpackage */,
 				272722CD2E9A9E8400A609D9 /* ContentViewModel.swift */,
 			);
 			path = ObjectDetector;
@@ -155,9 +155,9 @@
 				207CCD8E2C02822900742B74 /* ContentView.swift in Sources */,
 				204CEEEB2C028E18000AC03D /* PrimaryButtonStyle.swift in Sources */,
 				207CCD9A2C0282FC00742B74 /* CameraPicker.swift in Sources */,
+				27F47CCF2E9BF4A600AD2D41 /* Resnet50.mlpackage in Sources */,
 				272722CE2E9A9E8400A609D9 /* ContentViewModel.swift in Sources */,
 				207CCD8C2C02822900742B74 /* ObjectDetectorApp.swift in Sources */,
-				272722CC2E9A9D9300A609D9 /* Resnet50.mlmodel in Sources */,
 				207CCD9C2C028B2300742B74 /* ImageLoaderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
