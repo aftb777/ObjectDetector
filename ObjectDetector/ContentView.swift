@@ -26,7 +26,7 @@ struct ContentView: View {
                         .clipped()
                 }
             }
-            Text("No image detected")
+            Text(viewModel.detection)
                 .font(.system(size: 15, weight: .semibold))
                 .padding(.top)
             Group {

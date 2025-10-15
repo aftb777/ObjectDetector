@@ -14,6 +14,7 @@ class ContentViewModel {
     
     // Create ML request
     var imageAnalysis : VNCoreMLRequest?
+    var detection = "No image Detected"
     
     // Initialize our ML Model
     init() {
@@ -29,11 +30,18 @@ class ContentViewModel {
         // pass in to our ML Request
         self.imageAnalysis = VNCoreMLRequest(model: resnetVNCoreMLModel) { (request, error) in
             
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            
+            self.process(request: request)
         }
         
     }
     
     func detectObject(image : UIImage) {
+        detection = ""
         
         // Prepare Image
         guard let ciImage = CIImage(image: image) else {
@@ -41,7 +49,7 @@ class ContentViewModel {
         }
         
         // Create Image Handler
-        let handler = VNImageRequestHandler(ciImage: ciImage)
+        let handler = VNImageRequestHandler(ciImage: ciImage, orientation: .up)
         
         // Use our handler
         guard let imageAnalysis = imageAnalysis else { return }
@@ -50,5 +58,14 @@ class ContentViewModel {
         } catch {
             print(error.localizedDescription)
         }
+    }
+    
+    func process(request : VNRequest) {
+        guard let result = request.results as? [VNClassificationObservation],
+        let dominantResult = result.first else {
+            return
+        }
+        
+        detection = "\(Int(dominantResult.confidence * 100))% \(dominantResult.identifier)"
     }
 }
